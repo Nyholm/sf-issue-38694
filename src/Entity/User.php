@@ -30,6 +30,11 @@ class User
         return $this->id;
     }
 
+    public function __toString()
+    {
+        return 'user';
+    }
+
     public function getEmail(): ?string
     {
         return $this->email;
